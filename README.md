@@ -1,6 +1,6 @@
 # Summary
 
-When compiling this application with `--features asm-keccak`, the following test fails under Ubuntu and Arch, but passes on Mac:
+When compiling this application with `--features asm-keccak`, the following test fails under Ubuntu and Arch (x86_64), but passes on Mac:
 
 ```rust
 fn test_foo_fails() {
