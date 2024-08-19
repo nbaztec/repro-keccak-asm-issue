@@ -1,0 +1,12 @@
+[package]
+name = "foundry-zksync-release-debug"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+alloy-primitives = { version = "0.7.7", features = ["getrandom", "rand"] }
+era_test_node = { git="https://github.com/matter-labs/era-test-node.git" , rev = "dd6d2f463eb9697dc2365899a72ae12dae3ec809" }
+reqwest = "0.11.27"
+
+[features]
+asm-keccak = ["alloy-primitives/asm-keccak"]
