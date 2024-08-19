@@ -35,3 +35,9 @@ The issue seems to be that the keccak256 hash is incorrectly calculated on linux
 The example has been minimized from a foundry-zksync repository, where these collection of dependencies and their respective imports cause this issue to occur. 
 If any one of the deps or their imports is removed, then the issue goes away. 
 
+```bash
+# Running on linux-x86_64 arch
+
+make test           # fails
+make test-native    # passee
+```
