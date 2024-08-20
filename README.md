@@ -6,7 +6,8 @@ When compiling this application with `--features asm-keccak`, the following test
 fn test_foo_fails() {
     let a = alloy_primitives::keccak256("testFoo()");   // want: 0x79adbd5094e60c1bc2b963678ff44695d1430b8ccff0b1cd57c03a7f63567822
                                                         // got : 0xae33576402a61ff3a4a241b4a91d20ce98b70aa7bf0f388fb857111ec83aef73
-    let b = alloy_primitives::keccak256("test_Foo()");
+    // let b = alloy_primitives::keccak256("test_Foo()");
+    let b = alloy_primitives::keccak256();
     println!("testFoo() : {:?}", a);
     println!("test_Foo(): {:?}", b);
     assert_eq!(format!("{a:?}"), String::from("0x79adbd5094e60c1bc2b963678ff44695d1430b8ccff0b1cd57c03a7f63567822"));
