@@ -20,8 +20,8 @@ jobs:
 
       - name: run tests
         run: |
-          echo 'running test with asm-keccak'
-          CARGO_INCREMENTAL=false cargo test --features asm-keccak -- tests::test_foo_fails --exact --show-output
-          echo '..'
           echo 'running test without asm-keccak'
           CARGO_INCREMENTAL=false cargo test -- tests::test_foo_fails --exact --show-output
+          echo '..'
+          echo 'running test with asm-keccak'
+          CARGO_INCREMENTAL=false cargo test --features asm-keccak -- tests::test_foo_fails --exact --show-output
